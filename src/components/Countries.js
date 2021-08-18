@@ -2,7 +2,7 @@ import React from "react"
 
 const Countries = ({filteredCountries, showCountry}) => {
     if (filteredCountries.length === 0) {
-        return <p>Please specify your filter, blyat!</p>
+        return <p>Please specify your filter!</p>
     } else if (filteredCountries.length === 1) {
         showCountry(filteredCountries[0])
         return null 
